@@ -47,7 +47,7 @@ const plugin = ({ box, widgets }) => {
 
                 // Fetch vehicle coordinates and add markers to map
                 // fetch('https://fleetsim.onrender.com/vehicle/all/coordinates')
-                fetch('http://127.0.0.1:5500/car_ls.json')
+                fetch('https://minhnguyen179.github.io/car_ls.json')
                 .then(response => response.json())
                 .then(vehicleCoordinates => {
                     // For each vehicle, create a marker on the map
@@ -68,7 +68,7 @@ const plugin = ({ box, widgets }) => {
 
                 // Every 5 seconds, fetch the new coordinates and update the vehicle markers
                 setInterval(async () => {
-                    const response = await fetch('http://127.0.0.1:5500/car_ls.json')
+                    const response = await fetch('https://minhnguyen179.github.io/car_ls.json')
                     const vehicleCoordinates = await response.json();
                     Object.keys(vehicleCoordinates).forEach(truckId => {
                         const coordinates = vehicleCoordinates[truckId];
@@ -80,7 +80,7 @@ const plugin = ({ box, widgets }) => {
                 const chargestationMarkers = {}
 
                 // Fetch chargestation coordinates and add markers to map
-                fetch('http://127.0.0.1:5500/car_ls.json')
+                fetch('https://minhnguyen179.github.io/car_ls.json')
                 .then(response => response.json())
                 .then(chargestationCoordinates => {
                     // For each vehicle, create a marker on the map
@@ -100,7 +100,7 @@ const plugin = ({ box, widgets }) => {
 
                // Every 5 seconds, fetch the new coordinates and update the chargestation markers
                setInterval(async () => {
-                    const response = await fetch("http://127.0.0.1:5500/car_ls.json")
+                    const response = await fetch("https://minhnguyen179.github.io/car_ls.json")
                     const chargestationCoordinates = await response.json();
                     Object.keys(chargestationCoordinates).forEach(chargestationId => {
                         const coordinates = chargestationCoordinates[chargestationId];
