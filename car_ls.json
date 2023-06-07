@@ -1,0 +1,32 @@
+{
+    "AMBULANCE_PRIORITY":
+    {
+        "latitude":45.176955,
+        "longitude":-91.141494
+    },
+    "NORMAL_CAR_1":
+    {
+        "latitude":45.177571,
+        "longitude":-91.143015
+    },
+    "NORMAL_CAR_2":
+    {
+        "latitude":45.177605,
+        "longitude":-91.140915
+    },
+    "1G6KR5ES1B7DWBB7G":
+    {
+        "latitude":45.177575,
+        "longitude":-91.141666
+    },
+    "2FTDF0765VM0Y82YN":
+    {
+        "latitude":45.177696,
+        "longitude":-91.141452
+    },
+    "1D7FL36N834LGG68M":
+    {
+        "latitude":45.177316,
+        "longitude":-91.141455
+    }
+}
